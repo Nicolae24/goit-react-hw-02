@@ -1,0 +1,55 @@
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  margin: 40px auto;
+  list-style: none;
+}
+
+.item {
+  list-style: none;
+}
+
+.button {
+  background: linear-gradient(135deg, #4fc3f7, #1976d2);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-transform: capitalize;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #1976d2, #004ba0);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.resetButton {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 76, 76, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: #e63946;
+  transform: scale(1.05);
+}
