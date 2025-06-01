@@ -1,4 +1,4 @@
-import s from "./Feedbacks.module.css";
+import s from "./Feedback.module.css";
 
 const Feedback = ({ feedback }) => {
   return (

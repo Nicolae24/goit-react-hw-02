@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
-import Feedbacks from "./components/Feedbacks/Feedbacks";
+
 import { useLocalStorage } from "./hook/useLocalStorage";
+import Feedback from "./components/Feedback/Feedback";
+import Notification from "./components/Notification/Notification";
 const App = () => {
   const [feedback, setFeedbacks] = useLocalStorage("feedback", {
     good: 0,
@@ -43,7 +45,7 @@ const App = () => {
         onReset={handleReset}
       />
       {totalFeedback > 0 ? (
-        <Feedbacks
+        <Feedback
           feedback={[
             ...Object.entries(feedback),
             ["Total points", totalFeedback],
@@ -51,7 +53,7 @@ const App = () => {
           ]}
         />
       ) : (
-        <p className="noFeedback">No feedback given</p>
+        <Notification />
       )}
     </>
   );
